@@ -8,13 +8,15 @@ import org.slf4j.LoggerFactory;
 public class LoanApprovalService implements JavaDelegate {
 	Logger logger = LoggerFactory.getLogger(LoanApprovalService.class);
 	
+	
+	
 	@Override
 	public void execute(final DelegateExecution execution) {
 		String applicantName = (String) execution.getVariable("applicantName");
 		String contactNo = (String) execution.getVariable("contactNo");
 		Integer loanAmount = (Integer) execution.getVariable("loanAmount");
 
-		logger.info("applicantName : {}", applicantName);
+		logger.info("applicantName1 : {}", applicantName);
 		logger.info("contactNo : {}", contactNo);
 		logger.info("loanAmount : {}", loanAmount);
 
