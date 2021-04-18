@@ -1,6 +1,6 @@
-pipeline {
+node {
   
-  def tomcatHome = 'Users/Volumes/Trainings/Flowable/'
+  def tomcatHome = '/Users/Volumes/Trainings/Flowable/'
   agent any
 
   tools {
