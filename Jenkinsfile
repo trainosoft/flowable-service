@@ -1,7 +1,8 @@
 node {
   
-  def tomcatHome = '/Users/Volumes/Trainings/Flowable/'
   agent any
+
+  def tomcatHome = '/Users/Volumes/Trainings/Flowable/'
 
   tools {
     maven 'Maven 3.6.3'
