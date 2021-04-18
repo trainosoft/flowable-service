@@ -1,5 +1,6 @@
 pipeline {
   
+  def tomcatHome = '/Users/Volumes/Trainings/Flowable/'
   agent any
 
   tools {
@@ -22,7 +23,7 @@ pipeline {
     
      stage('Deploy'){
       steps {
-        sh 'cp target/flowable-service-task-demo.jar /Users/Volumes/Trainings/Flowable/'
+        sh 'cp target/flowable-service-task-demo.jar ${tomcatHome}/flowable-service-task-demo.jar'
       }
     }
     
