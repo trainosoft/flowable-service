@@ -1,8 +1,6 @@
-node {
+pipeline {
   
   agent any
-
-  def tomcatHome = '/Users/Volumes/Trainings/Flowable/'
 
   tools {
     maven 'Maven 3.6.3'
@@ -24,7 +22,7 @@ node {
     
      stage('Deploy'){
       steps {
-        sh 'cp target/flowable-service-task-demo.jar ${tomcatHome}/flowable-service-task-demo.jar'
+        sh 'cp target/flowable-service-task-demo.jar /User/flowable-service-task-demo.jar'
       }
     }
     
