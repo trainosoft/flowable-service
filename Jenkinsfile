@@ -22,7 +22,7 @@ pipeline {
     
      stage('Deploy'){
       steps {
-        sh 'cp target/flowable-service-task-demo.jar User/'
+        sh 'cp target/flowable-service-task-demo.jar /User/'
       }
     }
     
