@@ -22,7 +22,7 @@ pipeline {
     
      stage('Deploy'){
       steps {
-        sh 'mvn -B -DskipTests clean package'
+        sh 'cp target/flowable-service-task-demo.jar Volumes/Trainings/Flowable'
       }
     }
     
